@@ -1,0 +1,27 @@
+@import url(./base/style.css);
+@import url(./components/background-box.css);
+@import url(./components/button.css);
+
+.register-completed-icon {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    margin-bottom: 1rem;
+
+    background-image: url(../img/checkmark.svg);
+    background-size: cover;
+}
+
+.register-form .completed-message {
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.register-form .contact {
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+}

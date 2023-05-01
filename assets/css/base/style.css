@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(variables.css);
+
+body {
+    background-color: var(--purple);
+    padding-top: calc((100vh - 700px)/2);
+    padding-bottom: calc((100vh - 700px)/2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--principal-font);
+}

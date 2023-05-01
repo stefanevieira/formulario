@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/client_register.css">
+  <title>Join us!</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="container-img">
+        <img src="../assets/img/website.svg" alt="website">
+      </div>
+
+      <div class="container-form">
+        <form action="./completed_registration.html">
+          <div class="form-header">
+            <h1 class="title">Manage your freelance business with us!</h1>
+            <h4 class="subtitle">It takes less than 10 minutes to fill out all the information to register.
+            </h4>
+          </div>
+
+          <div class="input-container">
+            <div class="input-personal">
+              <div class="input-general">
+                <label class="input-label" for="name">Name</label>
+                <input name="name" class="input" type="text" placeholder="Full Name" data-type="name" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="email">E-mail</label>
+                <input name="email" class="input" type="email" placeholder="E-mail" data-type="email" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="phone">Phone</label>
+                <input name="phone" class="input" type="tel" placeholder="(00) 00000-0000" data-type="phone" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="cpf">CPF</label>
+                <input name="cpf" class="input" type="text" placeholder="CPF" data-type="cpf" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="birthDate">Birth date</label>
+                <input name="birthdate" class="input" id="birth" type="date" placeholder="Birth date"
+                  data-type="birthDate" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+            </div>
+
+            <div class="input-address">
+              <div class="input-general">
+                <label class="input-label" for="zipcode">Zip Code</label>
+                <input name="zipcode" class="input" type="zipcode" placeholder="Zip Code" data-type="zipcode"
+                  pattern="[\d]{5}-?[\d]{3}" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="city">City</label>
+                <input name="city" class="input" type="text" placeholder="City" data-type="city" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="state">State/region</label>
+                <input name="state" class="input" type="text" placeholder="State/region" data-type="state" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="password">Password</label>
+                <input name="password" class="input" type="password" placeholder="Password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" data-type="password"
+                  required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+
+              <div class="input-general">
+                <label class="input-label" for="password">Confirm Password</label>
+                <input name="confirmpassword" class="input" type="password" placeholder="Confirm Password"
+                  data-type="password" required>
+                <span class="input-error-message">Invalid field</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-checkbox">
+            <label class="input-label" for="checkbox">I agree to the terms of service</label>
+            <input type="checkbox" class="checkbox">
+          </div>
+
+          <div class="input button-container">
+            <input class="signup-button" type="submit" value="Sign up">
+            <a class="signin-button" href="./error.html">Sign in</a>
+          </div>
+      </div>
+      </form>
+    </div>
+
+  </main>
+
+  <script type="module" src="../js/app.js"></script>
+
+</body>
+
+</html>

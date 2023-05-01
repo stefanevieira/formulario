@@ -1,0 +1,212 @@
+@import url(./base/style.css);
+
+.container {
+    width: 80%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.container-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-purple);
+    padding: 1rem;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+.form-header {
+    padding-bottom: 2rem;
+}
+
+.form-header .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.form-header subtitle {
+    font-size: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.form-header h4::after {
+    content: '';
+    display: flex;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: var(--medium-pink);
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-error-message {
+    display: none;
+}
+
+.input-container-invalid .input-error-message {
+    display: block;
+    color: var(--strong-red);
+    font-size: 13px;
+    margin-top: -13px;
+
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-personal {
+    width: 50%;
+}
+
+.input-general {
+    padding-bottom: 0.5rem;
+}
+
+.input-general input {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001C;
+    padding: 0.8rem;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 4%;
+    width: 70%;
+}
+
+.input-address {
+    width: 50%;
+}
+
+.input-personal input:hover,
+.input-address input:hover {
+    background-color: var(--gray);
+}
+
+.checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.input-checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-button {
+    border: none;
+    background-color: var(--pink);
+    border-radius: 5px;
+    cursor: pointer;    
+    color: var(--white);
+    width: 20%;
+    height: 38px;
+    margin-right: 1rem;
+}
+
+.signup-button:hover {
+    background-color: var(--medium-pink);
+}
+
+.signin-button {
+    color: var(--pink);
+}
+
+.signin-button:hover {
+    color: var(--medium-pink)
+}
+
+@media screen and (max-width: 378px) {
+    
+    body {
+        padding: 0;
+    }
+    
+    .form-header .title {
+        font-size: 1.2rem;
+    }
+
+    .form-header subtitle,
+    .container {
+        font-size: 0.8rem;
+    }
+
+    .input-container-invalid .input-error-message {
+        font-size: 0.7rem;
+        margin-top: -0.7rem;
+        width: 200%;
+    }
+
+    .input-label {
+        display: block;
+    }
+
+    .signup-button {
+        width: unset;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    body {
+        padding: 0;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        height: unset;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+
+        align-items: center;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .container-form,
+    .container-img {
+        width: 80%;
+    }
+
+    .input-general input {
+        width: 180%;
+    }
+}
